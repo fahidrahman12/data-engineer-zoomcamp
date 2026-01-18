@@ -1146,10 +1146,17 @@ name = "pipeline"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "ipykernel" },
+    { name = "jupyter-client" },
+    { name = "jupyter-server" },
+    { name = "jupyterlab" },
+    { name = "notebook" },
     { name = "pandas" },
     { name = "psycopg2-binary" },
     { name = "pyarrow" },
+    { name = "pyzmq" },
     { name = "sqlalchemy" },
+    { name = "tornado" },
     { name = "tqdm" },
 ]
 
@@ -1162,10 +1169,17 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "ipykernel", specifier = ">=6.29" },
+    { name = "jupyter-client", specifier = ">=8.6" },
+    { name = "jupyter-server", specifier = ">=2.14" },
+    { name = "jupyterlab", specifier = ">=4.3" },
+    { name = "notebook", specifier = ">=7.2" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
     { name = "pyarrow", specifier = ">=22.0.0" },
+    { name = "pyzmq", specifier = ">=26" },
     { name = "sqlalchemy", specifier = ">=2.0.45" },
+    { name = "tornado", specifier = ">=6.4" },
     { name = "tqdm", specifier = ">=4.67.1" },
 ]
 
