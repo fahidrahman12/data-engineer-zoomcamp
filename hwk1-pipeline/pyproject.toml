@@ -1,0 +1,27 @@
+[project]
+name = "hwk1-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.11"
+dependencies = [
+    "ipykernel>=6.29",
+    "jupyter-client>=8.6",
+    "jupyter-server>=2.14",
+    "jupyterlab>=4.3",
+    "notebook>=7.2",
+    "pandas>=2.3.3",
+    "psycopg2-binary>=2.9.11",
+    "pyarrow>=22.0.0",
+    "pyzmq>=26",
+    "sqlalchemy>=2.0.45",
+    "tornado>=6.4",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "pgcli>=4.4.0",
+]
